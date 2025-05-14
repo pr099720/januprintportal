@@ -1,12 +1,76 @@
-
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Janu Game</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prakash Enterprises - Card Print Portal</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: #f9f9f9;
+    }
+    header {
+      background: #004aad;
+      color: white;
+      padding: 1rem 2rem;
+      text-align: center;
+      font-size: 1.5rem;
+    }
+    main {
+      max-width: 600px;
+      margin: 2rem auto;
+      background: white;
+      padding: 2rem;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      border-radius: 12px;
+    }
+    h2 {
+      color: #004aad;
+      margin-bottom: 1rem;
+    }
+    input, select, textarea, button {
+      width: 100%;
+      padding: 0.8rem;
+      margin-bottom: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 1rem;
+    }
+    button {
+      background: #004aad;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      color: #666;
+      font-size: 0.9rem;
+    }
+  </style>
 </head>
 <body>
-    <h1>Welcome to Janu Game Platform</h1>
-    <p>This is a placeholder. Replace with full game code.</p>
-</body>
-</html>
+  <header>
+    Prakash Enterprises - Card Print Portal
+  </header>
+  <main>
+    <h2>Place Your Card Print Order</h2>
+    <form>
+      <input type="text" placeholder="Full Name" required />
+      <input type="tel" placeholder="Mobile Number" required />
+      <input type="email" placeholder="Email Address" />
+      <select required>
+        <option value="">Select Card Type</option>
+        <option value="business">Business Card</option>
+        <option value="wedding">Wedding Card</option>
+        <option value="custom">Custom Design</option>
+      </select>
+      <input type="number" placeholder="Quantity" required />
+      <textarea placeholder="Additional Instructions"></textarea>
+      <input type="file" />
+      <button type="submit">Submit Order</button>
+    </form>
+  </main>
+  <footer>
